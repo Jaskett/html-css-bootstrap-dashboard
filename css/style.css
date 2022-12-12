@@ -33,18 +33,31 @@ header {
 
 /* Main */
 .mf-aside {
-    background-color: lightcoral;
+    width: 10%;
+    position: relative;
+    background-color: #051e34;
 }
 
-.mf-top, .mf-bottom {
-    background-color: lightgoldenrodyellow;
-    border: 1px dashed black;
-    height: 100px;
-    width: 100%;
+.mf-background-img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url(../img/sidebar-bg.png);
+}
+
+.mf-aside i {
+    font-size: 1.5rem;
+}
+
+.mf-aside a {
+    color: white;
 }
 
 .mf-content-main {
     background-color: lightcyan;
     overflow: auto;
     height: calc(100vh - 70px);
+    width: 90%;
 }

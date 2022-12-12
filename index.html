@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -21,8 +22,8 @@
         <nav class="navbar navbar-expand-lg h-100 d-flex align-items-center">
             <div class="container-fluid mf-bg-header flex-nowrap">
                 <a class="navbar-brand" href="#">
-                    <img class="d-none d-md-inline-block" src="img/logo.svg" alt="Logo">
-                    <img class="d-md-none logo-mobile" src="img/mobile-logo.png" alt="Mobile Logo">
+                    <img class="d-none d-lg-inline-block" src="img/logo.svg" alt="Logo">
+                    <img class="d-lg-none logo-mobile" src="img/mobile-logo.png" alt="Mobile Logo">
                 </a>
 
                 <form class="container-fluid">
@@ -66,44 +67,81 @@
     </header>
 
     <!-- Main -->
-    <main>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col mf-aside d-flex flex-column justify-content-between py-2">
-                    <div class="mf-top"></div>
+    <main class="d-flex">
+        <div class="mf-aside d-flex flex-column justify-content-between py-2">
+            <div class="mf-background-img"></div>
+            <nav class="mf-top d-flex justify-content-center">
+                <ul class="p-0 list-unstyled">
+                    <li class="pb-4">
+                        <a class="text-decoration-none" href="#">
+                            <i class="fa-solid fa-house"></i>
+                            <span class="d-none d-lg-inline">
+                                Home
+                            </span>
+                        </a>
+                    </li>
 
-                    <div class="mf-bottom"></div>
-                </div>
+                    <li class="pb-4">
+                        <a class="text-decoration-none" href="#">
+                            <i class="fa-solid fa-chart-simple"></i>
+                            <span class="d-none d-lg-inline">
+                                Stats
+                            </span>
+                        </a>
+                    </li>
 
-                <div class="col-11 mf-content-main">
-                    <div class="container-fluid">
+                    <li class="pb-4">
+                        <a class="text-decoration-none" href="#">
+                            <i class="fa-solid fa-signal"></i>
+                            <span class="d-none d-lg-inline">
+                                Signals
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="mf-bottom d-flex justify-content-center">
+                <ul class="p-0 list-unstyled">
+                    <li>
+                        <a class="text-decoration-none" href="#">
+                            <i class="fa-solid fa-gear"></i>
+                            <span class="d-none d-lg-inline">
+                                Admin
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mf-content-main">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- Content Main -->
+                    <div class="col-12 bg-danger">
+
+                    </div>
+
+                    <!-- Colonna sinistra dopo md -->
+                    <div class="col-md-8 bg-light">
                         <div class="row">
-                            <!-- Content Main -->
-                            <div class="col-12 bg-danger">
+                            <!-- Prossime Classi -->
+                            <div class="col-12 bg-dark"></div>
 
-                            </div>
+                            <!-- F.A.Q. -->
+                            <div class="col-12 bg-dark"></div>
+                        </div>
+                    </div>
 
-                            <!-- Colonna Sinistra dopo md -->
-                            <div class="col-md-8 bg-light">
-                                <div class="row">
-                                    <!-- Prossime classi -->
-                                    <div class="col-12 bg-dark"></div>
+                    <!-- Colonna destra dopo md -->
+                    <div class="col-md-4 bg-light">
+                        <div class="row">
+                            <!-- ToDo -->
+                            <div class="col-12 bg-dark"></div>
 
-                                    <!-- F.A.Q. -->
-                                    <div class="col-12 bg-dark"></div>
-                                </div>
-                            </div>
-
-                            <!-- Colonna Destra dopo md -->
-                            <div class="col-md-4 bg-light">
-                                <div class="row">
-                                    <!-- ToDo -->
-                                    <div class="col-12 bg-dark"></div>
-
-                                    <!-- Grafico -->
-                                    <div class="col-12 bg-dark"></div>
-                                </div>
-                            </div>
+                            <!-- Grafico -->
+                            <div class="col-12 bg-dark"></div>
                         </div>
                     </div>
                 </div>
