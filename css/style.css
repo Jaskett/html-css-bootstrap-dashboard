@@ -4,6 +4,11 @@ header {
     width: 100%;
     background-color: lightblue;
 }
+/*
+.mf-search {
+    width: 80%;
+}
+ */
 
 .mf-action {
     border: none;
@@ -13,6 +18,13 @@ header {
 /* Main */
 .mf-aside {
     background-color: lightcoral;
+}
+
+.mf-top, .mf-bottom {
+    background-color: lightgoldenrodyellow;
+    border: 1px dashed black;
+    height: 100px;
+    width: 100%;
 }
 
 .mf-content-main {
