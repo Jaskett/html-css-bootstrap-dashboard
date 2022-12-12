@@ -1,0 +1,18 @@
+/* Header */
+header {
+    height: 70px;
+    width: 100%;
+    background-color: lightblue;
+}
+
+/* Main */
+.mf-aside {
+    background-color: lightcoral;
+}
+
+.mf-content-main {
+    background-color: lightcyan;
+    width: 1200px;
+    overflow: auto;
+    height: calc(100vh - 70px);
+}
