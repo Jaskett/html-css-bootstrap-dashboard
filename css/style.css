@@ -5,6 +5,11 @@ header {
     background-color: lightblue;
 }
 
+.mf-action {
+    border: none;
+    background-color: #e5e5e5;
+}
+
 /* Main */
 .mf-aside {
     background-color: lightcoral;
@@ -12,7 +17,6 @@ header {
 
 .mf-content-main {
     background-color: lightcyan;
-    width: 1200px;
     overflow: auto;
     height: calc(100vh - 70px);
 }
