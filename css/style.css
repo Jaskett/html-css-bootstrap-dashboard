@@ -62,3 +62,11 @@ header {
     background-color: rgba(0,0,0,0.3);
     font-size: .8rem;
 }
+
+table th:first-child, td:first-child {
+    text-align: left;
+}
+
+th, td {
+    text-align: center;
+}
