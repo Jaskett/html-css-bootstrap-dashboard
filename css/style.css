@@ -27,7 +27,6 @@ header {
 }
 
 .mf-action {
-    border: 2px dashed #e5e5e5;
     background-color: #e5e5e5;
 }
 
@@ -35,7 +34,7 @@ header {
     margin-left: 10px;
 }
 
-.nav-item .nav-link .bi-bell-fill {
+.mf-dropdown .bi-bell-fill {
     color: #ff8f00;
 }
 
@@ -48,7 +47,8 @@ header {
 }
 
 .mf-aside i {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    padding-right: 10px;
 }
 
 .mf-aside a {
@@ -56,7 +56,6 @@ header {
 }
 
 .mf-content-main {
-    background-color: lightcyan;
     overflow: auto;
     height: calc(100vh - 70px);
     width: 90%;
@@ -73,6 +72,10 @@ header {
 
 .mf-canvas.offcanvas.offcanvas-end {
     width: 70vw;
+}
+
+th:nth-child(2), td:nth-child(2), th:nth-child(3), td:nth-child(3) {
+  display: none;
 }
 
 table th:first-child, td:first-child {

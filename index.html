@@ -31,7 +31,7 @@
 
                 <form class="container-fluid h-100 pe-0">
                     <div class="input-group h-100">
-                        <span class="input-group-text ps-1 p-0 mf-action">
+                        <span class="input-group-text px-2 p-0 mf-action" id="basic-addon1">
                             <i class="bi bi-search"></i>
                         </span>
                         <input type="text" class="form-control mf-action" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="basic-addon1">
@@ -63,9 +63,17 @@
                                 <i class="bi bi-bell-fill"></i>
                             </button>
                             <ul class="dropdown-menu dropdown-menu-end">
-                                <li><button class="dropdown-item" type="button">Profilo</button></li>
-                                <li><button class="dropdown-item" type="button">Fatturazione</button></li>
-                                <li><button class="dropdown-item" type="button">Logout</button></li>
+                                <li>
+                                    <button class="dropdown-item" type="button">Profilo</button>
+                                </li>
+
+                                <li>
+                                    <button class="dropdown-item" type="button">Fatturazione</button>
+                                </li>
+
+                                <li>
+                                    <button class="dropdown-item" type="button">Logout</button>
+                                </li>
                             </ul>
                         </div>
                     </ul>
@@ -126,9 +134,9 @@
             <div class="container-fluid">
                 <div class="row">
                     <!-- Content Main -->
-                    <div class="col-12 bg-primary">
+                    <div class="col-12 bg-primary mb-2">
                         <div class="row mf-top-main p-4">
-                            <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="col-12 col-sm-4 col-lg-6 mb-4 mb-lg-0">
                                 <div>
                                     <!-- Titolo + Badge -->
                                     <h1 class="d-inline-block">Boolean</h1>
@@ -163,26 +171,37 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-4">
+                            <div class="col-12 col-sm-4 col-lg-4">
                                 <p>Studenti online negli ultimi 30 minuti</p>
                                 <span class="fs-3">125</span>
                             </div>
 
-                            <div class="col-lg-2">
-                                <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <div class="col-12 order-first col-sm-4 order-sm-last col-lg-2">
+                                <p>Nuovo Studente</p>
+                                <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                                     <i class="fa-solid fa-plus"></i>
                                 </button>
 
                                 <div class="offcanvas offcanvas-end mf-canvas" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                                     <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Form</h5>
+                                        <h5 class="offcanvas-title text-dark" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                     </div>
 
                                     <div class="offcanvas-body">
                                         <form class="row g-3">
                                             <div class="col-md-6">
-                                                <label for="basic-addon1" class="form-label">Email</label>
+                                                <label for="inputName" class="form-label text-dark">Nome</label>
+                                                <input type="text" class="form-control" id="inputName">
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <label for="inputLastname" class="form-label text-dark">Cognome</label>
+                                                <input type="text" class="form-control" id="inputLastname">
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <label for="basic-addon1" class="form-label text-dark">Email</label>
                                                 <div class="input-group mb-3">
                                                     <span class="input-group-text" id="basic-addon1">@</span>
                                                     <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
@@ -190,22 +209,22 @@
                                             </div>
 
                                             <div class="col-md-6">
-                                                <label for="inputPassword4" class="form-label">Password</label>
+                                                <label for="inputPassword4" class="form-label text-dark">Password</label>
                                                 <input type="password" class="form-control" id="inputPassword4">
                                             </div>
 
                                             <div class="col-12">
-                                                <label for="inputAddress" class="form-label">Indirizzo</label>
+                                                <label for="inputAddress" class="form-label text-dark">Indirizzo</label>
                                                 <input type="text" class="form-control" id="inputAddress">
                                             </div>
 
                                             <div class="col-md-6">
-                                                <label for="inputCity" class="form-label">Città</label>
+                                                <label for="inputCity" class="form-label text-dark">Città</label>
                                                 <input type="text" class="form-control" id="inputCity">
                                             </div>
 
                                             <div class="col-md-4">
-                                                <label for="inputState" class="form-label">Stato</label>
+                                                <label for="inputState" class="form-label text-dark">Stato</label>
                                                 <select id="inputState" class="form-select">
                                                   <option selected>Scegli...</option>
                                                   <option>
@@ -227,13 +246,13 @@
                                             </div>
 
                                             <div class="col-md-2">
-                                                <label for="inputZip" class="form-label">CAP</label>
+                                                <label for="inputZip" class="form-label text-dark">CAP</label>
                                                 <input type="text" class="form-control" id="inputZip">
                                             </div>
 
                                             <div class="col-12">
                                                 <div class="mb-3">
-                                                  <label for="formFile" class="form-label">Foto</label>
+                                                  <label for="formFile" class="form-label text-dark">Foto</label>
                                                   <input class="form-control" type="file" id="formFile">
                                                 </div>
                                             </div>
@@ -241,7 +260,7 @@
                                             <div class="col-12">
                                                 <div class="form-check">
                                                   <input class="form-check-input" type="checkbox" id="gridCheck">
-                                                  <label class="form-check-label" for="gridCheck">
+                                                  <label class="form-check-label text-dark" for="gridCheck">
                                                     Seleziona per proseguire
                                                   </label>
                                                 </div>
@@ -263,7 +282,7 @@
                         <div class="row">
                             <!-- Prossime Classi -->
                             <div class="col-12 mb-4">
-                                <div class="card-header bg-secondary bg-opacity-10 border px-4 pt-2">
+                                <div class="card-header bg-secondary bg-opacity-10 border px-4 pt-2 rounded-top d-flex justify-content-between align-items-center">
                                     <h2>Prossime classi</h2>
                                 </div>
                                 <div class="card-body border-end border-start border-bottom rounded-bottom p-1">
@@ -432,7 +451,7 @@
                                     <h2>F.A.Q.</h2>
                                 </div>
 
-                                <div class="card-body border-end border-start border-bottom rounded-bottom p-4">
+                                <div class="card-body border-end border-start border-bottom rounded-bottom p-1">
                                     <div class="accordion accordion-flush" id="accordionFlushExample">
                                         <div class="accordion-item">
                                             <h2 class="accordion-header" id="flush-headingOne">
