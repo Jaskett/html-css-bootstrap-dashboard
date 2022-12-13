@@ -111,13 +111,11 @@ tr td:last-child span {
 }
 
 /* Media Query */
-@media screen and (min-width: 660px) {
+@media screen and (min-width: 576px) {
     th:nth-child(2), td:nth-child(2) {
         display: table-cell;
     }
-}
 
-@media screen and (min-width: 538px) {
     th:nth-child(3), td:nth-child(3) {
         display: table-cell;
     }
