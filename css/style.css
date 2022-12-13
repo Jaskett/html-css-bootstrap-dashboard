@@ -91,6 +91,11 @@ tr td:last-child span {
     border-radius: 5px;
 }
 
+.mf-accordion .accordion-item {
+    border: none;
+    border-bottom: 1px solid #dee2e6;
+}
+
 /* Media Query */
 @media screen and (min-width: 660px) {
     th:nth-child(2), td:nth-child(2) {
