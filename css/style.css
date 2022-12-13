@@ -31,6 +31,10 @@ header {
     background-color: #e5e5e5;
 }
 
+.mf-li li:not(:first-child) {
+    margin-left: 10px;
+}
+
 .nav-item .nav-link .bi-bell-fill {
     color: #ff8f00;
 }
@@ -97,15 +101,6 @@ tr td:last-child span {
     height: 25px;
     line-height: 25px;
     border-radius: 5px;
-}
-
-.mf-accordion .accordion-item {
-    border: none;
-    border-bottom: 1px solid #dee2e6;
-}
-
-.mf-accordion .accordion-item:last-child {
-    border: none;
 }
 
 .mf-grafico p, .mf-grafico li, .mf-grafico a {
