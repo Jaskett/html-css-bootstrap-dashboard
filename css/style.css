@@ -67,6 +67,10 @@ header {
     font-size: .8rem;
 }
 
+.mf-canvas.offcanvas.offcanvas-end {
+    width: 70vw;
+}
+
 table th:first-child, td:first-child {
     text-align: left;
 }
